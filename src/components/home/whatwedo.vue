@@ -1,31 +1,28 @@
 <template>
   <v-container fluid>
-    <wwdSection :topic="whatwedodata[0]" md="3" lg="3" xl="3" />
-    <v-divider class="ma-2" />
-    <wwdSection :topic="whatwedodata[1]" md="3" lg="3" xl="3" />
-    <v-divider class="ma-2" />
-    <wwdSection :topic="whatwedodata[2]" md="6" lg="6" xl="3" />
-    <v-divider class="ma-2" />
-    <wwdSection :topic="whatwedodata[3]" md="4" lg="4" xl="4">
-    </wwdSection>
+    <v-row v-for="(topic, index) in whatwedodata" :key="index">
+      <v-col class="pa-0">
+        <sec :topic="topic" :md="widths[index][0]" :lg="widths[index][1]" :xl="widths[index][2]" />
+        <v-divider v-if="index + 1 < whatwedodata.length" class="ma-2" />
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
-import wwdSection from "@/components/home/wwdComponents/wwdSection.vue";
+import Section from "@/components/common/BasicCard/Section.vue";
 
 export default {
   props: {
     whatwedodata: Array
   },
-  // data() {
-  //   return {
-  //     item: Object
-  //   };
-  // },
-
+  data() {
+    return {
+      widths: [[3, 3, 3], [3, 3, 3], [6, 6, 3], [4, 4, 4]],
+    };
+  },
   components: {
-    wwdSection
+    Sec: Section,
   }
 };
 </script>

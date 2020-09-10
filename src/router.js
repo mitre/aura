@@ -159,6 +159,16 @@ const router = new Router({
       },
     },
     {
+      path: "/apps-and-tools",
+      name: "apps-and-tools",
+      component: () => import("@/views/AppsAndTools.vue"),
+      meta: {
+        title: `Apps and Tools | ${communityData.communityName}`,
+        color: "#0277bd",
+        requiresAuth: false,
+      },
+    },
+    {
       path: "/training",
       name: "training",
       component: () => import("@/views/Training.vue"),

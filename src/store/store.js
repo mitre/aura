@@ -62,6 +62,16 @@ export default new Vuex.Store({
         },
       },
       {
+        text: "Apps and Tools",
+        to: "/apps-and-tools",
+        icon: "mdi-hammer-wrench",
+        meta: {
+          showToolbar: true,
+          enabled: true,
+          showBottomNav: false,
+        },
+      },
+      {
         text: "Training",
         to: "/training",
         icon: "mdi-chair-school",
