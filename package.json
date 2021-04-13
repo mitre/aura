@@ -14,19 +14,7 @@
       ]
     ],
     "plugins": [
-      "@babel/plugin-proposal-nullish-coalescing-operator",
-      [
-        "prismjs",
-        {
-          "languages": [
-            "json",
-            "ruby"
-          ],
-          "plugins": [],
-          "theme": "tomorrow",
-          "css": true
-        }
-      ]
+      "@babel/plugin-proposal-nullish-coalescing-operator"
     ]
   },
   "private": true,
@@ -38,8 +26,6 @@
   },
   "dependencies": {
     "@mdi/font": "^5.9.55",
-    "@types/prismjs": "^1.16.1",
-    "babel-plugin-prismjs": "2.0.1",
     "babel-polyfill": "^6.26.0",
     "core-js": "^3.10.1",
     "css-vars-ponyfill": "^2.4.3",
@@ -50,9 +36,7 @@
     "register-service-worker": "^1.7.2",
     "vue": "^2.6.12",
     "vue-cheetah-grid": "^1.0.0",
-    "vue-code-highlight": "^0.7.6",
     "vue-prism-component": "1.2.0",
-    "vue-prismjs": "1.2.0",
     "vue-router": "^3.5.1",
     "vue-svg-inline-loader": "^2.1.2",
     "vue-svg-loader": "^0.16.0",

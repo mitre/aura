@@ -22,7 +22,7 @@
         <div v-for="ex in row.examples" :key="ex" class="ma-4">
           <p class="subheader ma-0">{{ ex.title }}</p>
           <p>{{ ex.desc }}</p>
-          <Prism >{{ ex.code }}</Prism>
+          <Prism language="ruby">{{ ex.code }}</Prism>
         </div>
       </div>
       <p v-if="row.footer" class="ma-2">
@@ -38,7 +38,7 @@ import "prismjs";
 import "prismjs/components/prism-ruby.js";
 import "prismjs/components/prism-markup.js";
 import Prism from "vue-prism-component";
-import "prismjs/themes/prism.css";
+import 'prismjs/themes/prism-tomorrow.css';
 
 export default {
   data() {
