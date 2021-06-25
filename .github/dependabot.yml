@@ -1,0 +1,16 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "20:00"
+    timezone: America/New_York
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: core-js
+    versions:
+    - 3.10.2
+  - dependency-name: "@vue/cli-service"
+    versions:
+    - 4.5.11
