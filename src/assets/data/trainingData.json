@@ -3,8 +3,9 @@
     "courses" : [
       {
         "name" : "Inspec Profile Developer Course",
-        "link" : "https://mitre-inspec-developer.netlify.com/",
+        "course_link" : "https://mitre-inspec-developer.netlify.com/",
         "desc" : "This course teaches the basics of writing and running InSpec test profiles. Note that basic knowledge of Ruby and CLI familiarity is required.",
+        "video_link" : "https://www.youtube.com/playlist?list=PLkTApXQou_8LsM26IAZjQsdaDNvsnTWjB",
         "bullets" : [
           "Learn about the InSpec framework and its capabilities",
           "Write your own test profiles to learn InSpec profile architecture and best practices",
@@ -13,7 +14,7 @@
       },
       {
         "name" : "Inspec Advanced Developer Course",
-        "link" : "https://mitre-inspec-advanced-developer.netlify.app/",
+        "course_link" : "https://mitre-inspec-advanced-developer.netlify.app/",
         "desc" : "This course provides a deep dive into InSpec's advanced capabilities.",
         "bullets" : [
           "Learn to use profile inheritance techniques to run multiple profiles against a target",
